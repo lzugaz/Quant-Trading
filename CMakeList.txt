@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(quant_trading)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+add_executable(quant_trading src/main.cpp src/data_acquisition.cpp src/strategy.cpp src/backtesting.cpp)
